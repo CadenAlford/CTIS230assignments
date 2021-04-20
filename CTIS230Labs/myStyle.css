@@ -1,9 +1,13 @@
 body{
     color:black;
+    font-size:large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h4{
      color:green;
+     background-color: seashell;
+     width:fit-content;
 }
 h1{
     color:black;
@@ -11,7 +15,27 @@ h1{
 h2
 {
     color:red;
+    background-color:seashell;
+    width:fit-content;
+    font-size: 1.4em;
+    
 }
 h3{
     color:dodgerblue;
+    background-color:seashell;
+    width:fit-content;
+}
+strong{
+    background-color:yellowgreen;
+    font-style: italic;
+    font-weight: bolder;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color:green;
+}
+a:hover{
+    color:violet;
 }
