@@ -8,14 +8,14 @@
     <body>
         <h1>Final Project Proposol</h1>
         <h2>Brief Description</h2>
-    <p>     I have chosen to complete <strong>option 1</strong> for my final project. I will create an original program that will act as a bowling score system that will also provide additional analysis of the user’s scores. 
+    <div class = "p1"><p class = "intro">     I have chosen to complete <strong>option 1</strong> for my final project. I will create an original program that will act as a bowling score system that will also provide additional analysis of the user’s scores. 
         I have been bowling since I could walk and I still have trouble calculating the score of my own bowling games, so I can only imagine how a new league bowler would feel when trying to calculate their own scores. 
         Bowling has some unique features that make this project a bit difficult to execute. When the bowler rolls a strike (all ten pens down on the first shot), that frame will receive a score of 10 plus the score of the next frame. 
         If a bowler spares (all ten pins knocked down over the course of two frames), then that frame will receive 10 points plus the score of the first throw of the next frame. This leads to interesting interactions where the score of one frame can increase over the course of the next few balls. 
         For example, the bowler can roll a strike in the first frame and that is scored as a 10. Then, if the user rolls another strike then the score of the first frame turns into 20. The max score that one strike can turn into is 30, because the frame gets a bonus for the next two balls thrown. 
-    </p>
+   </p class = "intro"></div>
         <h3>Scoring System Plan</h3>
-	<p>     The plan is to achieve the scoring aspect through a series of boolean expressions and algorithms that will help calculate each individual frame’s score. The challenge that I might face is getting the program to recognize multiple shots within a frame and then progressively adding the scores together as the frames go on. 
+	<p class = "main">     The plan is to achieve the scoring aspect through a series of boolean expressions and algorithms that will help calculate each individual frame’s score. The challenge that I might face is getting the program to recognize multiple shots within a frame and then progressively adding the scores together as the frames go on. 
         Some interesting interactions I might run into are telling the program to move on after one shot after a strike, compared to moving on after 2 shots. Also, in the tenth frame if a strike or spare is thrown, then the bowler gets a third shot. Another issue I might face is the way that strikes and spares create bonuses. 
         The way that a bowling system accounts for these is when a strike is inputted into the system, the score is not calculated until the bonus balls are thrown following the strike or spare. I think that this would be easily obtainable through boolean expressions. If a strike is thrown, then wait until there are two more inputs to calculate the score.
      </p>
@@ -24,14 +24,14 @@
          The buttons will consist of numbers 1-9, “/” for a spare, and “X” for a strike. For the spare I will have to set it equal to 10 - the score of the first ball thrown in the frame. To implement this I will use the buttons available through JavaFX. Ideally, the buttons that will act as inputs for the user to type their scores into the program. 
          The numbers will display on the graphic like a normal bowling alley would, then the numbers would run through the program to calculate the score between each frame. There will also be another button that will say “submit frame”, which will act as a run button for the code that is controlled by the user. After the game is completed, I want to add another button named “additional analysis”.
          This button will pop up another box with statistics of your bowling games. 
-    </p>
+    </p class = "main">
     <h3>Statistical Analysis</h3>
-    <p>
+    <p class = "main">
         One of the main components that I want to include in the program is the saving of the user’s scores behind the scenes in order to calculate additional statistics that would be presented with the “additional analysis” button. I’m not sure the most efficient way to complete this task, but my current idea is to include a blank .txt file and then after each game is completed, the program will take the score and place it into the text file. 
         Then I should be able to use the scanner utility to scan the .txt file and perform the deeper analysis that I would want to complete. Once I have stored the user’s game data, I would like to calculate their average game, their average series, their handicap, and the +/- of their most recent game compared to their average score. These would come from algorithms that use the user’s average score as a base. Average score is calculated by the total score across all games divided by the total number of games bowled.
         The average series of a bowler is their average score multiplied by three. Handicap in bowling can vary from league to league, but most adult leagues use a figure similar to 80% of the difference between 230 and the bowler’s average. If the bowler averages over 230 the handicap is 0. The +/- of the game will be calculated by taking the most recent score the user bowled and subtracting their average. 
         This is all that I planned for the project this far, I am open to suggestions and will most likely have to adapt as I go and learn new concepts. 
-    </p>    
+    </p class = "main">    
        <p><a href="AlfordAssignment3.html">Final Project Description</a></p>
        <p><a href="AlfordAssignmentp3.html">Final Project Functionality</a></p>
     

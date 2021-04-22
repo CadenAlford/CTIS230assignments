@@ -1,7 +1,7 @@
 body{
     color:black;
     font-size:large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 h4{
@@ -11,31 +11,66 @@ h4{
 }
 h1{
     color:black;
+    margin-bottom: 1.0em;
+    width: 500px;
 }
-h2
-{
+h2{
     color:red;
     background-color:seashell;
     width:fit-content;
-    font-size: 1.4em;
+    font-size: 1.4em;  
+    margin-bottom: 1.0em;
+    padding: 5px;
     
 }
-h3{
+h3,h4{
     color:dodgerblue;
     background-color:seashell;
-    width:fit-content;
+    width: fit-content;
+    margin-bottom: 0.9em;
 }
 strong{
     background-color:yellowgreen;
-    font-style: italic;
-    font-weight: bolder;
 }
 a:link{
     color:red;
+    width: 5.0em;
 }
 a:visited{
     color:green;
 }
 a:hover{
     color:violet;
+}
+p strong{ 
+    background-color: yellow;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+p.intro{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif
+}
+
+p.main, h1, h2, h3, h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img#final{
+width:30%;
+}
+
+img#code{
+width:20%;
+float: left;
+padding-bottom: 50px;
+}
+
+ol li{
+    margin-bottom: 0.2em;
+}
+
+div.p1{
+text-indent:25px;
 }
