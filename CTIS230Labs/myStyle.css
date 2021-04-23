@@ -1,13 +1,16 @@
 body{
     color:black;
     font-size:large;
-    
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.5em;
 }
 
 h4{
      color:green;
      background-color: seashell;
      width:fit-content;
+     margin-top: 5px;
 }
 h1{
     color:black;
@@ -35,9 +38,11 @@ strong{
 a:link{
     color:red;
     width: 5.0em;
+    font-weight: bolder;
 }
 a:visited{
     color:green;
+    font-weight: bolder;
 }
 a:hover{
     color:violet;
@@ -50,21 +55,34 @@ p strong{
 
 p.intro{
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p.main{
+    text-indent:25px;
 }
 
 p.main, h1, h2, h3, h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
+
 img#final{
-width:30%;
+width:30%; 
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-bottom: 50px;
+border: 5px outset red;
 }
 
 img#code{
 width:20%;
-float: left;
-padding-bottom: 50px;
+float:right;
+margin-bottom: 15px;
+margin-left: 30px;
+margin-top: 50px;
+border: 5px outset dodgerblue;
 }
 
 ol li{
@@ -73,4 +91,28 @@ ol li{
 
 div.p1{
 text-indent:25px;
+}
+
+div.navbar{
+    display:flex;
+    border: 2px solid black;
+    margin-left: 0px;
+}
+div.nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: seashell;
+    width: calc(50%);
+}
+div.footbar{
+    display:flex;
+    border: 2px solid black;
+}
+div.foot{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: seashell;
+    width: calc(33%);
 }
