@@ -15,3 +15,30 @@ myitem.addEventListener("mouseout",onMouseout);
 function onMouseout(){
     myitem.style.color = "red";
 }
+
+thebutton = document.getElementById("thebutton");
+otheritem = document.getElementById("buttontest");
+thebutton.addEventListener("click",onButtonClick);
+
+
+function onButtonClick(){
+    otheritem.style.color= "blue";
+}
+
+
+thebutton2 = document.getElementById("thebutton2");
+otheritem2 = document.getElementById("buttontest2");
+thebutton2.addEventListener("click",onButtonClick2)
+
+function onButtonClick2(){
+    otheritem2.style.color = "black";
+    otheritem2.style.fontFamily = "serif";
+}
+
+textentry = document.getElementById("myinput");
+textentry = document.addEventListener("change",onChange);
+
+function onChange(){
+    newtext = myinput.value
+    otheritem.innerHTML = newtext;
+}
