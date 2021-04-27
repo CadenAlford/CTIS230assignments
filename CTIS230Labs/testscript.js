@@ -42,3 +42,12 @@ function onChange(){
     newtext = myinput.value
     otheritem.innerHTML = newtext;
 }
+
+addfeat = document.getElementById("addfeat");
+
+addfeat.addEventListener("click", onPClick);
+
+function onPClick(){
+    addfeat.style.fontSize = "24px";
+}
+
