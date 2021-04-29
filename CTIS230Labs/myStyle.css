@@ -134,4 +134,8 @@ div.foot{
         margin-top: 1%;
         border: 3px outset dodgerblue;
     }
+
+    div.foot{
+        font-size: 0.8em;
+    }
 }
