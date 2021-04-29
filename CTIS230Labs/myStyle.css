@@ -116,4 +116,10 @@ div.foot{
     background-color: seashell;
     width: calc(33%);
 }
-
+@media (max-width: 750px) {
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+}
