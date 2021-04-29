@@ -120,6 +120,10 @@ div.foot{
     body{
         margin-left: 3%;
         margin-right: 1%;
-        
+    }
+    h1{
+        color:black;
+        margin-bottom: 1.0em;
+        width: .5em;
     }
 }
