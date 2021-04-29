@@ -118,8 +118,8 @@ div.foot{
 }
 @media (max-width: 750px) {
     body{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
         
     }
 }
