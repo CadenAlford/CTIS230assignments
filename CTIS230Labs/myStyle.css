@@ -118,8 +118,8 @@ div.foot{
 }
 @media (max-width: 750px) {
     body{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 7%;
+        margin-right: 7%;
     }
     h1{
         color:black;
@@ -141,5 +141,17 @@ div.foot{
 
     div.foot{
         font-size: 0.63em;
+    }
+}
+
+@media (orientation:landscape){
+    body{
+        flex-direction: row;
+    }
+}
+
+@media (orientatio:portrait){
+    body{
+        flex-direction: column;
     }
 }
