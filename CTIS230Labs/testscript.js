@@ -51,3 +51,37 @@ function onPClick(){
     addfeat.style.fontSize = "24px";
 }
 
+
+ballDiv = document.getElementById("ball");
+theLargeView = document.getElementById("largeview");
+ballImage = document.getElementById("ballImage");
+
+ballDiv.addEventListener("click", makeBallBig);
+theLargeView.addEventListener("click",hideBallImage);
+ballDiv.addEventListener("click",expandImage);
+
+
+function hideBallImage(){
+    theLargeView.classList.add("dontshow")
+    theLargeView.innerHTML = "";
+}
+
+function makeBallBig(event){
+    console.log(event);
+    theLargeView.classList.remove("dontshow");
+}
+
+function expandImage(){
+    if (ballDiv.style.position == ""){
+        ballDiv.style.position = "fixed";
+        ballDiv.style.top = "40%";
+        ballDiv.style.left = "20%";
+        ballImage.style.width = "auto";
+        ballImage.src = "images/tball.png";
+    }
+   else if (ballDiv.style.position == "fixed"){
+        ballDiv.style.position = "";
+        ballImage.style.width = "50px";
+        ballImage.src = "images/tball.png";
+    }
+}

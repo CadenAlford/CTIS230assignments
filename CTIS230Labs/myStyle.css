@@ -150,8 +150,26 @@ div.foot{
     }
 }
 
-@media (orientatio:portrait){
+@media (orientation:portrait){
     body{
         flex-direction: column;
     }
+}
+
+img#ball{
+    width: 75px;
+}
+
+div#ball{
+    width:fit-content;
+}
+
+div#largeview{
+    position: fixed;
+    top: 10%;
+    left: 0%;
+}
+
+div#largeview.dontshow{
+    display: none;
 }
